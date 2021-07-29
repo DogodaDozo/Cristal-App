@@ -16,7 +16,8 @@ class SearchScreen extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text('Seach Screen'),
+            title: Text('MOOD.'),
+            automaticallyImplyLeading: false,
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -128,6 +129,35 @@ class SearchScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(22.0),
                     ),
                   ),
+                ),
+              ),
+              SizedBox(height: 50.0),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    FloatingActionButton(
+                      child: Icon(
+                        Icons.home,
+                        size: 35.0,
+                        color: Colors.orange,
+                      ),
+                      backgroundColor: Colors.white,
+                      onPressed: () {},
+                    ),
+                    SizedBox(width: 50.0),
+                    FloatingActionButton(
+                      child: Icon(
+                        Icons.favorite,
+                        size: 35.0,
+                        color: Colors.orange,
+                      ),
+                      backgroundColor: Colors.white,
+                      onPressed: () {},
+                    ),
+                  ],
                 ),
               ),
             ],
