@@ -13,7 +13,7 @@ class LoadingScreen extends StatelessWidget {
     const oneSec = const Duration(seconds: 1);
     _timer = new Timer.periodic(oneSec, (Timer timer) {
       if (_start == 0) {
-        // Navigator.pop(_context!);
+        Navigator.pop(_context!);
         Navigator.push(
           _context!,
           MaterialPageRoute(builder: (context) => SearchScreen()),

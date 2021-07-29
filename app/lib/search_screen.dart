@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './list_manager.dart';
+
 class SearchScreen extends StatelessWidget {
   final textController = TextEditingController();
 
@@ -76,7 +78,16 @@ class SearchScreen extends StatelessWidget {
                       fontSize: 18.0,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ListManager(
+                          listName: 'Party',
+                        ),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     shape: RoundedRectangleBorder(
@@ -99,7 +110,16 @@ class SearchScreen extends StatelessWidget {
                       fontSize: 18.0,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ListManager(
+                          listName: 'Love',
+                        ),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     shape: RoundedRectangleBorder(
@@ -122,7 +142,16 @@ class SearchScreen extends StatelessWidget {
                       fontSize: 18.0,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ListManager(
+                          listName: 'Chill',
+                        ),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     shape: RoundedRectangleBorder(
@@ -155,7 +184,16 @@ class SearchScreen extends StatelessWidget {
                         color: Colors.orange,
                       ),
                       backgroundColor: Colors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ListManager(
+                              listName: 'Coups de coeur',
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),
