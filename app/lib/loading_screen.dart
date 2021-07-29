@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import './third_screen.dart';
+import 'search_screen.dart';
 
 BuildContext? _context;
 
@@ -16,7 +16,7 @@ class LoadingScreen extends StatelessWidget {
         // Navigator.pop(_context!);
         Navigator.push(
           _context!,
-          MaterialPageRoute(builder: (context) => ThirdScreen()),
+          MaterialPageRoute(builder: (context) => SearchScreen()),
         );
         _timer!.cancel();
       } else {
