@@ -46,6 +46,7 @@ class _ListManagerState extends State<ListManager> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: Text(_listName),
         ),
         body: ListView(

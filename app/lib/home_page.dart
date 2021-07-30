@@ -15,7 +15,8 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          title: Text('Home Page'),
+          backgroundColor: Colors.black,
+          title: Center(child: Text('Home Page')),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,

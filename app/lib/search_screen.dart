@@ -18,7 +18,8 @@ class SearchScreen extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text('MOOD.'),
+            backgroundColor: Colors.black,
+            title: Center(child: Text('MOOD.')),
             automaticallyImplyLeading: false,
           ),
           body: Column(

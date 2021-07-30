@@ -40,9 +40,9 @@ class LoadingScreen extends StatelessWidget {
         ),
         child: Scaffold(
           backgroundColor: Colors.transparent,
-          appBar: AppBar(
-            title: Text('Loading Screen'),
-          ),
+          // appBar: AppBar(
+          //   title: Text('Loading Screen'),
+          // ),
         ),
       ),
     );

@@ -38,10 +38,14 @@ class ListItem extends StatelessWidget {
                 ),
                 onTap: () {
                   print(elt);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ItemDetails(itemName: Text(elt))),
-                  );
+                  if (elt != 'Publicité') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ItemDetails(itemName: Text(elt))),
+                    );
+                  }
                 },
               ),
             ),
